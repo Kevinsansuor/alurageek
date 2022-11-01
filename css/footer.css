@@ -1,11 +1,20 @@
 .footer{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: auto;
 }
 
 .footer .info p{
     margin-bottom: .5rem;
+}
+
+
+.footer .acordeon{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
 }
 
 .footer .newsletter form{
@@ -64,6 +73,17 @@ box-shadow:  5px 5px 10px #bebebe,
 footer{
     display: block;
     background-color: var(--gris__opaco);
+    
+}
+
+footer h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+footer p{
+    text-align: center;
 }
 
 
@@ -72,4 +92,40 @@ footer{
         display: flex;
         flex-direction: column;
     }
+
+    .footer .acordeon{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: flex-start;
+    margin-top: 0;
+}
+    
+}
+
+@media screen and (max-width:500px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .logo{
+        padding-bottom: 1rem;
+    }
+
+    .footer .links{
+        padding-bottom: 1rem;
+        margin-left: 2rem; margin-right: auto;
+    }
+
+    .footer .links h2{
+        font-weight: bold;
+        padding-bottom: .5rem;
+    }
+
+    .footer .newsletter form input[type="submit"]{
+    width: 100%;
+}
+
+    
 }

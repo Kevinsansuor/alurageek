@@ -1,0 +1,11 @@
+
+nav .barra__navegacion .espacioinput{
+    display: flex;
+    margin: auto;
+}
+
+@media screen and (max-width:450px) {
+    nav .barra__navegacion .espacioinput{
+        display: none;
+    }
+}
