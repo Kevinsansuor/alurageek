@@ -35,7 +35,7 @@ nav{
 }
 
 .barra__navegacion .login{
-    width: 15%;
+    width: 10%;
 }
 
 .barra__navegacion .login p{
@@ -51,6 +51,11 @@ nav{
     background-color: var(--azul);
     color: var(--blanco);
     transition: all .5s linear;
+    opacity: .8;
+}
+
+.barra__navegacion .login p:active{
+    opacity: .6;
 }
 
 .espacioinput input[type="text"]{
@@ -67,6 +72,7 @@ nav{
 
 .espacioinput button[type="submit"]:hover{
     color: var(--azul);
+    opacity: .8;
 }
 
 

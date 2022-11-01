@@ -1,5 +1,5 @@
 .banner{
-    position: absolute;
+    position: relative;
     top: 100px;
     height: 50vh;
     width: 100%;
@@ -43,6 +43,16 @@
     padding: 1rem;
     color: var(--blanco);
     background-color: var(--azul);
+    border-radius: 5px;
+    box-shadow: 2px 1px 25px var(--negro);
+}
+
+.banner__contenido .banner__accion .btn:hover{
+    opacity: .8;
+}
+
+.banner__contenido .banner__accion .btn:active{
+    opacity: .6;
 }
 
 
