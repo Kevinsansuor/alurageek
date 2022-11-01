@@ -12,9 +12,11 @@
 
 
 .footer .acordeon{
+    margin-left: 0; margin-right: auto;
     display: flex;
-    width: 60%;
-    justify-content: space-around;
+    width: 45%;
+    justify-content: space-between;
+    float: left;
 }
 
 .footer .newsletter form{
@@ -29,8 +31,7 @@
     margin: .5rem 0;
     border-radius: 5px;
 background: #e0e0e0;
-box-shadow:  5px 5px 10px #bebebe,
-             -5px -5px 10px #ffffff;
+
 }
 
 .footer .newsletter form input[type="email"]{
@@ -40,8 +41,7 @@ box-shadow:  5px 5px 10px #bebebe,
     margin: .5rem 0;
     border-radius: 5px;
 background: #e0e0e0;
-box-shadow:  5px 5px 10px #bebebe,
-             -5px -5px 10px #ffffff;
+
 }
 
 .footer .newsletter form textarea{
@@ -52,8 +52,7 @@ box-shadow:  5px 5px 10px #bebebe,
 
     border-radius: 5px;
 background: #e0e0e0;
-box-shadow:  5px 5px 10px #bebebe,
-             -5px -5px 10px #ffffff;
+
 }
 
 .footer .newsletter form input[type="submit"]{
@@ -66,8 +65,8 @@ box-shadow:  5px 5px 10px #bebebe,
     margin: .5rem 0;
     border-radius: 5px;
 background: var(--azul);
-box-shadow:  5px 5px 10px #bebebe,
-             -5px -5px 10px #ffffff;
+
+
 }
 
 footer{
@@ -104,6 +103,15 @@ footer p{
 }
 
 @media screen and (max-width:500px) {
+
+    .footer .info{
+        width: ;
+    }
+
+    .footer .links{
+        width: 100%;
+    }
+
     .footer{
         display: flex;
         flex-direction: column;
