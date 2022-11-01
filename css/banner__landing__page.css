@@ -10,6 +10,41 @@
     background-position: center;
 }
 
+.banner .banner__contenido{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto; margin-right: auto;
+    margin-top: auto; margin-bottom: auto;
+    background-color: #50514f2f;
+    padding: 3rem;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+
+.banner__contenido .titulo{
+    font-size: 4rem;
+    color: var(--blanco);
+    margin: 0;
+    padding-bottom: 1.5rem;
+}
+
+.banner__contenido .subtitulo{
+    font-size: 2rem;
+    color: var(--blanco);
+    padding-bottom: 1.5rem;
+}
+
+.banner__contenido .btn{
+    background-color: var(--azul);
+    padding: 1rem;
+    color: var(--blanco);
+}
+
+.banner
+
+
+
 @media screen and (max-width:768px) {
     .banner{
         background-size: cover;
