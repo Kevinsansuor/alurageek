@@ -53,11 +53,13 @@
         background-size: cover;
         background-position: center;
         height: 45vh;
+        
     }
 
     .banner .banner__contenido{
     width: 90%;
         backdrop-filter: blur(2px);
+        padding: 2rem;
     }
 
     .banner__contenido .titulo{
