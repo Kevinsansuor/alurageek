@@ -1,0 +1,126 @@
+nav{
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+}
+
+.busqueda__movil{
+    display: none;
+}
+
+.barra__navegacion{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    padding: 0 8%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.barra__navegacion .logo{
+    float: left;
+}
+
+.espacioinput{
+    display: flex;
+    width: 30%;
+    background-color: var(--gris__opaco);
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.barra__navegacion .login{
+    width: 15%;
+}
+
+.barra__navegacion .login p{
+    border: solid 2.5px var(--azul);
+    text-align: center;
+    padding-top: 1rem; padding-bottom: 1rem;
+    font-size: 1.8rem;
+    color: var(--azul);
+    transition: .5s;
+}
+
+.barra__navegacion .login p:hover{
+    background-color: var(--azul);
+    color: var(--blanco);
+    transition: all .5s linear;
+}
+
+.espacioinput input[type="text"]{
+    opacity: .8;
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.espacioinput button[type="submit"]{
+    padding: 0 .5rem 0 .5rem;
+    cursor: pointer;    
+}
+
+.espacioinput button[type="submit"]:hover{
+    color: var(--azul);
+}
+
+
+/*Tablet query*/
+
+@media screen and (max-width:768px) {
+    .barra__navegacion .logo img{
+        width: 120px;
+    }
+
+    .espacioinput{
+    width: 50%;
+    padding: 1rem;
+    border-radius: 45px;
+}
+
+    .barra__navegacion .login{
+    width: 20%;
+}
+
+
+    .barra__navegacion .login p{
+    padding-top: 1rem; padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--azul);
+    transition: .5s;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    .barra__navegacion .logo img{
+        width: 120px;
+    }
+
+    .espacioinput{
+    display: none;
+}
+
+    .barra__navegacion .login{
+    width: 35%;
+}
+
+
+    .barra__navegacion .login p{
+    padding-top: 1rem; padding-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--azul);
+    transition: .5s;
+    }
+
+    .busqueda__movil{
+        display: block;
+    }
+
+    
+}
