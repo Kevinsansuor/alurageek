@@ -1,0 +1,75 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .info p{
+    margin-bottom: .5rem;
+}
+
+.footer .newsletter form{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .newsletter form input[type="text"]{
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--gris);
+    margin: .5rem 0;
+    border-radius: 5px;
+background: #e0e0e0;
+box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+}
+
+.footer .newsletter form input[type="email"]{
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--gris);
+    margin: .5rem 0;
+    border-radius: 5px;
+background: #e0e0e0;
+box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+}
+
+.footer .newsletter form textarea{
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--gris);
+    margin: .5rem 0;
+
+    border-radius: 5px;
+background: #e0e0e0;
+box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+}
+
+.footer .newsletter form input[type="submit"]{
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--blanco);
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    margin: .5rem 0;
+    border-radius: 5px;
+background: var(--azul);
+box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+}
+
+footer{
+    display: block;
+    background-color: var(--gris__opaco);
+}
+
+
+@media screen and (max-width:768px) {
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+    }
+}
