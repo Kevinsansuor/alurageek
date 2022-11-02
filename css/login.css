@@ -9,95 +9,117 @@ nav .barra__navegacion .espacioinput{
     height: 100px;
 }
 
-main {
+.container .login__panel{
     width: 100%;
-    height: calc(100vh - 100px);
     background: url(../recursos/banner/undraw_personal_site_re_c4bp.svg) no-repeat;
+    background-size: auto;
     background-position: center;
-    background-size: contain;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    
 }
 
-.login{
+.container .login__panel .background{
     display: flex;
-    position: relative;
-    transform: translateY(50%);
-}
-
-main .login{
-    display: flex;
-    width: 800px;
-    background-color: var(--azul__opaco);
+    flex-direction: column;
+    padding: 4rem 2rem;
+    width: 35%;
+    border-radius: 15px;
+    background-color: var(--gris__opaco);
+    border-radius: 25px;
+    box-shadow:  5px 5px 30px #bebebe;
     color: var(--gris);
     backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 2.5rem 1rem;
-    margin-left: auto; margin-right: auto;
+}
+
+.container .login__panel .login__panel__header{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.container .login__panel .login__panel__formulario{
+    display: flex;
+    width: 100%;
     flex-direction: column;
+}
+
+.container .login__panel .login__panel__formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.container .login__panel .login__panel__formulario form input[type="email"],
+.container .login__panel .login__panel__formulario form input[type="password"]{ 
+    background-color: var(--gris__opaco);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
     border-radius: 50px;
 
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    border-radius: 50px;
+background: #e0e0e0;
 box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
 }
 
-main .login .header{
-    text-align: center;
-}
 
-main .login form{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.login form input[type="email"], 
-.login form input[type="password"]{
-    background-color: var(--blanco);
-    padding: 1rem 1rem 1rem 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 45px;
-    border-radius: 50px;
-background: #ffffff;
-box-shadow:  20px 20px 60px #d9d9d9,
-             -20px -20px 60px #ffffff;
-}
-
-.login form input[type="submit"]{
-    background-color: var(--azul);
+.container .login__panel .login__panel__formulario form input[type="submit"]{
+    background-color: var(--gris__opaco);
     color: var(--blanco);
     padding: 1rem;
     text-align: center;
-    border-radius: 45px;
-    font-size: 1.4rem;
+    margin-top: 1rem;
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    transition: .5s;
 }
 
+.container .login__panel .login__panel__formulario form input[type="submit"]:hover{
+    background-color: var(--gris);
+    transition: all .5s ease-out ;
+}
 
+@media screen and (max-width:1000px) {
+    .container .login__panel .background{
+    width: 55%;
+}
+}
+
+@media screen and (max-width:700px) {
+    .container .login__panel .background{
+    width: 75%;
+}
+}
+
+@media screen and (max-width:450px) {
+    .container .login__panel .background{
+    width: 85%;
+}
+}
+
+@media screen and (max-width:360px) {
+    .container .login__panel .background{
+    width: 95%;
+}
+}
 
 @media screen and (max-width:450px) {
     nav .barra__navegacion .espacioinput{
         display: none;
     }
-}
-
-@media screen and (max-width:900px) {
-    main .login{
-    width: 600px;
-}
-}
-
-@media screen and (max-width:768px) {
-    main .login{
-    width: 400px;
-}
-
-}
-
-@media screen and (max-width:400px) {
-    main .login{
-    width: 300px;
-}
-
 }
