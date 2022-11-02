@@ -56,8 +56,22 @@
 }
 
 
+.cards__productos__image{
+    background-color: var(--gris__opaco);
+    padding: 1.5rem .5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(10px);
+box-shadow:  20px 20px 30px #bebebe,
+             -20px -20px 30px #ffffff;
+}
+
 
 .cards .cards__productos .cards__productos__new .cards__productos__image img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; margin-right: auto;
     width: 250px;
     border-radius: 5px;
     border: 2px solid var(--negro);
@@ -112,7 +126,7 @@
 
 
     .cards .cards__productos .cards__productos__new .cards__productos__image{
-        height: 200px;
+        height: 250px;
         
     }
 
@@ -130,6 +144,10 @@
     }
 
     .cards .cards__productos .cards__productos__new{
+    padding: 0;
+}
+
+.cards .cards__productos{
     padding: 0;
 }
 

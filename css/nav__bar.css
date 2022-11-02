@@ -7,6 +7,15 @@ nav{
     z-index: 999;
 }
 
+.barra__navegacion .logo{
+    transition: .5s;
+}
+
+.barra__navegacion .logo:hover{
+    transform: scale(1.12);
+    transition: .5s ease-in-out;
+}
+
 .busqueda__movil{
     display: none;
 }
@@ -30,21 +39,24 @@ nav{
     width: 30%;
     background-color: var(--gris__opaco);
     justify-content: space-between;
-    padding: 1rem;
-    border-radius: 25px;
+    padding: .5rem;
+    border-radius: 5px;
 }
 
 .barra__navegacion .login{
-    width: 10%;
+    width: fit-content;
+    
 }
 
 .barra__navegacion .login p{
     border: solid 2.5px var(--azul);
     text-align: center;
-    padding-top: 1rem; padding-bottom: 1rem;
-    font-size: 1.8rem;
+    padding-top: .5rem; padding-bottom: .5rem;
+    font-size: 1.4rem;
     color: var(--azul);
     transition: .5s;
+    padding-left: 1rem; padding-right: 1rem;
+    border-radius: 5px;
 }
 
 .barra__navegacion .login p:hover{

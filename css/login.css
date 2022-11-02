@@ -4,14 +4,13 @@ nav .barra__navegacion .espacioinput{
     margin: auto;
 }
 
-.separador{
-    width: 100%;
-    height: 100px;
+main .container{
+    padding: 0;
 }
 
 .container .login__panel{
     width: 100%;
-    background: url(../recursos/banner/undraw_personal_site_re_c4bp.svg) no-repeat;
+    background: url(../recursos/banner/login__banner.svg) no-repeat;
     background-size: auto;
     background-position: center;
     height: 60vh;
@@ -19,9 +18,6 @@ nav .barra__navegacion .espacioinput{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
     
 }
 
@@ -29,7 +25,7 @@ nav .barra__navegacion .espacioinput{
     display: flex;
     flex-direction: column;
     padding: 4rem 2rem;
-    width: 35%;
+    width: 45%;
     border-radius: 15px;
     background-color: var(--gris__opaco);
     border-radius: 25px;
@@ -76,8 +72,9 @@ box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
 }
 
+/*Botones temporales para redirection del formulario*/
 
-.container .login__panel .login__panel__formulario form input[type="submit"]{
+.container .login__panel .login__panel__formulario form .submit{
     background-color: var(--gris__opaco);
     color: var(--blanco);
     padding: 1rem;
@@ -89,7 +86,9 @@ box-shadow:  20px 20px 60px #bebebe,
     transition: .5s;
 }
 
-.container .login__panel .login__panel__formulario form input[type="submit"]:hover{
+/*Botones temporales para redirection del formulario*/
+
+.container .login__panel .login__panel__formulario form .submit:hover{
     background-color: var(--gris);
     transition: all .5s ease-out ;
 }
@@ -114,7 +113,8 @@ box-shadow:  20px 20px 60px #bebebe,
 
 @media screen and (max-width:360px) {
     .container .login__panel .background{
-    width: 95%;
+    width: 100%;
+    border-radius: 0;
 }
 }
 
