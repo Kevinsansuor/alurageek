@@ -87,6 +87,10 @@ nav{
     opacity: .8;
 }
 
+.login .btn__admin{
+    display: none;
+}
+
 
 /*Tablet query*/
 

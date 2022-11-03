@@ -1,0 +1,101 @@
+.login .btn__admin{
+    display: flex;
+}
+
+.login .btn__login{
+    display: none;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: url(../recursos/banner/banner__formulario__productos.svg) no-repeat;
+    background-position: center;
+}
+
+.container .panel{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gris__opaco);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+
+.container .panel .header .titulo h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.formulario__contenido{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.formulario__contenido .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.formulario__contenido .formulario input{
+    background-color: var(--gris__opaco);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 7.5px;
+    backdrop-filter: blur(15px);
+}
+
+.formulario__contenido .formulario textarea{
+    background-color: var(--gris__opaco);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 7.5px;
+    backdrop-filter: blur(15px);
+}
+
+.formulario__contenido .formulario input[type="submit"]{
+    background-color: var(--gris__opaco);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 45px;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.formulario__contenido .formulario input[type="submit"]:hover{
+    background-color: var(--gris);
+    transition: .5s ease-in-out;
+    color: var(--blanco);
+}
+
+@media screen and (max-width:800px) {
+    .container .panel{
+    width: 80%;
+    padding: 2rem 1rem;
+}
+
+.barra__navegacion .login p{
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.container .panel{
+    width: 100%;
+    padding: 2rem 1rem;
+}
+}
