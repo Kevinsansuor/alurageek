@@ -99,3 +99,9 @@ main .container{
     padding: 2rem 1rem;
 }
 }
+
+@media screen and (max-width:500px) {
+    .container .panel{
+    box-shadow: none;
+}
+}

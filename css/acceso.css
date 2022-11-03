@@ -25,7 +25,6 @@ main .container{
     align-items: center;
     flex-direction: column;
     padding: 4rem 2rem;
-    
     width: 45%;
     border-radius: 15px;
     background-color: var(--gris__opaco);
@@ -78,4 +77,11 @@ main .container{
 }
 
 .container .traslucido .submit:active{opacity: .8;}
+
+@media screen and (max-width:768px) {
+    .container .traslucido{
+    padding: 4rem 2rem;
+    width: 95%;
+}
+}
     
