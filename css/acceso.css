@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 main .container{
     width: 100%;
     height: calc(100vh - 100px);
@@ -84,4 +85,86 @@ main .container{
     width: 95%;
 }
 }
+=======
+main .container{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+main .container{
+    padding: 0;
+    width: 100%;
+    background: url(../recursos/banner/loginbanner__succes.svg) no-repeat;
+    background-size: auto;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.error{
+    display: none;
+}
+
+.container .traslucido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    
+    width: 45%;
+    border-radius: 15px;
+    background-color: var(--gris__opaco);
+    border-radius: 25px;
+    box-shadow:  5px 5px 30px #bebebe;
+    color: var(--gris);
+    backdrop-filter: blur(10px);
+    
+}
+
+.container .traslucido .header{
+
+    text-align: center;
+
+}
+
+.container .traslucido .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .traslucido .header i{
+    font-size: 6.5rem;
+    color: var(--azul);
+    text-shadow: 5px 5px 30px var(--blanco);
+}
+
+/*Botones temporales para redirection del formulario*/
+
+.container .traslucido .submit{
+    background-color: var(--gris__opaco);
+    color: var(--blanco);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    transition: .5s;
+    width: 100%;
+}
+
+/*Botones temporales para redirection del formulario*/
+
+.container .traslucido .submit:hover
+{
+    background-color: var(--gris);
+    transition: all .5s ease-out ;
+
+}
+
+.container .traslucido .submit:active{opacity: .8;}
+>>>>>>> 745d74967e094510c347534c195192e6048a9318
     
