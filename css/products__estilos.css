@@ -139,6 +139,10 @@ main .container{
 }
 
 @media screen and (max-width:500px) {
+    main .container {
+        padding-bottom: 2rem;
+    }
+
     main .container .contenido{
         display: flex;
         flex-direction: column;
