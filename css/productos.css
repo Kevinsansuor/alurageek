@@ -1,0 +1,49 @@
+.container .cards .cards__header__btn.btn{
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.container .container__productos__lista{
+    display: flex;
+    flex-direction: row;
+}
+
+.cards .cards__productos .cards__productos__new .cards__productos__new__contenido .cards__productos__image .icons{
+    display: flex;
+    width: 100%;
+    padding: .5rem;
+    justify-content: flex-end;
+    background-color: var(--azul);
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+.cards .cards__productos .cards__productos__new .cards__productos__new__contenido .cards__productos__image img{
+    border-radius: 0;
+}
+
+.cards .cards__productos .cards__productos__new .cards__productos__new__contenido .cards__productos__image .icons a{
+    display: flex;
+    width: 100%;
+    
+    color: var(--blanco);
+    padding: .5rem;
+}
+
+@media screen and (max-width:400px) {
+
+    .container{
+        padding: .5rem;
+    }
+
+    .container .cards .cards__header__btn.btn{
+    padding: .5rem;
+}
+}
