@@ -86,6 +86,54 @@ main .container{
     transition: all .5s ease-in-out;
 }
 
+main .container.productos__similares{
+    display: flex;
+    flex-direction: column;
+}
+
+.container.productos__similares .header{
+    margin-bottom: 2rem;
+}
+
+.container.productos__similares .card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.container.productos__similares .card .card__product{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    padding: 0%;
+    justify-content: center;
+}
+
+.container.productos__similares .card .card__product .card__image{
+    width: 100%;
+    height: auto;
+}
+
+.container.productos__similares .card .card__product .card__image img{
+    width: 90%;
+    height: auto;
+}
+
+.card .card__product .titulo{
+    margin-bottom: .5rem;
+}
+
+.card .card__product .precio{
+    margin-bottom: .5rem;
+}
+
+.card .card__product .accion{
+    color: var(--azul);
+}
+
 @media screen and (max-width:900px) {
     .texto .descripcion{
     width: 100%;
@@ -114,7 +162,25 @@ main .container{
 }
 }
 
+
+
+@media screen and (max-width:950px) {
+    .container.productos__similares .card .card__product{
+    width: 25%;
+}
+}
+
 @media screen and (max-width:768px) {
+
+.container.productos__similares .card{
+    justify-content: inherit;
+}
+
+.container.productos__similares .card .card__product{
+    width: 33%;
+    
+}
+
     .texto .descripcion{
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -139,6 +205,20 @@ main .container{
 }
 
 @media screen and (max-width:500px) {
+
+    .container.productos__similares .card {
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .container.productos__similares .card .card__product{
+    width: 50%;
+    padding: 1rem 0;
+    justify-content: space-between;
+    }
+
+    
+
     main .container {
         padding-bottom: 2rem;
     }
